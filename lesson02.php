@@ -36,5 +36,9 @@ while(true){
         case 4:
             echo empty($stack) ? "empty\n" : "not empty\n";
             break;
+
+        default:
+            echo "終了\n";
+            break 2;
     }
 }

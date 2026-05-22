@@ -4,11 +4,6 @@ $stack = [];
 while(true){
     $mode = (int)readline("1-4 : ");
 
-    if ($mode < 1 || $mode > 4){
-        echo "終了\n";
-        break;
-    }
-
     switch($mode){
 
     case 1:
@@ -36,6 +31,9 @@ while(true){
     case 4:
         echo empty($stack) ? "empty\n" : "not empty\n";
         break;
-    
+
+    default:
+        echo "終了\n";
+        break 2;
     }
 }
